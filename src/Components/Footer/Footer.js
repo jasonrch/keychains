@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
-import './Home.scss';
 
-class Home extends Component {
+class Footer extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
     }
     render() { 
         return ( 
-            <div id='container'>
-                <h1>Kiera's Keychains</h1>
-                <p>Est. 2020©</p>
+            <div>
+                <h1>Footer.js</h1>
             </div>
          );
     }
 }
  
-export default Home;
+export default Footer;

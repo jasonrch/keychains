@@ -1,0 +1,19 @@
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 6vw;
+    box-shadow: 0 0 5px 5px grey;
+}
+#nav-links {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#nav-links {
+    a {
+        color:purple
+    }
+}
