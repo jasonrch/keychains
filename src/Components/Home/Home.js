@@ -9,8 +9,7 @@ class Home extends Component {
     render() { 
         return ( 
             <div id='container'>
-                <h1>Kiera's Keychains</h1>
-                <p>Est. 2020©</p>
+                <h1>Home.js</h1>
             </div>
          );
     }

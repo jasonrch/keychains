@@ -1,38 +1,52 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { faHome } from '@fortawesome/free-solid-svg-icons'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import { faAddressCard } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faHome, faShoppingCart, faAddressCard, faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-router-dom';
 import './Header.scss';
 
 class Header extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { 
+            mobileOpen: false
+         }
     }
     render() { 
         return ( 
-            <div id='header'>
-                <div style={{"height":"50px"}}>
+            <header>
+                <div id='ex'>
+
+                <div id='icon-cont'>
                     <FontAwesomeIcon icon={faCoffee} />
                 </div>
                 <div id='nav-links'>
                     <Link to='/'>
-                        <FontAwesomeIcon size='2x' icon={faHome} />
+                        <FontAwesomeIcon icon={faHome} />
                     </Link>
-                    <Link to='/Cart'>
-                        <FontAwesomeIcon size='2x' icon={faShoppingCart} />
+                    <Link to='/cart'>
+                        <FontAwesomeIcon icon={faShoppingCart} />
                     </Link>
-                    <Link to='/Contact'>
-                        <FontAwesomeIcon size='2x' icon={faAddressCard} />
+                    <Link to='contact'>
+                        <FontAwesomeIcon icon={faAddressCard} />
                     </Link>
                 </div>
-                <div>
-                    <a src='profile btn' />
+                <div id='mobile-menu'>
+                    <FontAwesomeIcon onClick={() => this.setState({mobileOpen: !this.state.mobileOpen}) } icon={this.state.mobileOpen ? faTimes : faBars} />
                 </div>
-            </div>
+
+                </div>
+                <div id={this.state.mobileOpen ? 'nav-links-2-open':'nav-links-2-closed'}>
+                    <Link to='/'>
+                        <FontAwesomeIcon icon={faHome} />
+                    </Link>
+                    <Link to='/cart'>
+                        <FontAwesomeIcon icon={faShoppingCart} />
+                    </Link>
+                    <Link to='contact'>
+                        <FontAwesomeIcon icon={faAddressCard} />
+                    </Link>
+                </div>
+            </header>
          );
     }
 }
