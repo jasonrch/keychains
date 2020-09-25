@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faHome, faShoppingCart, faAddressCard, faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faHome, faShoppingCart, faAddressCard, faBars, faTimes, faShoppingBag} from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-router-dom';
 import './Header.scss';
 
@@ -23,10 +23,13 @@ class Header extends Component {
                     <Link to='/'>
                         <FontAwesomeIcon icon={faHome} />
                     </Link>
-                    <Link to='/cart'>
+                    <Link to='/items/'>
+                        <FontAwesomeIcon icon={faShoppingBag} />
+                    </Link>
+                    <Link to='/cart/'>
                         <FontAwesomeIcon icon={faShoppingCart} />
                     </Link>
-                    <Link to='contact'>
+                    <Link to='/contact/'>
                         <FontAwesomeIcon icon={faAddressCard} />
                     </Link>
                 </div>
@@ -39,10 +42,13 @@ class Header extends Component {
                     <Link to='/'>
                         <FontAwesomeIcon icon={faHome} />
                     </Link>
-                    <Link to='/cart'>
+                    <Link to='/items/'>
+                        <FontAwesomeIcon icon={faShoppingBag} />
+                    </Link>
+                    <Link to='/cart/'>
                         <FontAwesomeIcon icon={faShoppingCart} />
                     </Link>
-                    <Link to='contact'>
+                    <Link to='/contact/'>
                         <FontAwesomeIcon icon={faAddressCard} />
                     </Link>
                 </div>
