@@ -1,8 +1,13 @@
+$barbie-pink: #da1884ff;
+$davys-grey: #555555ff;
+$light-cyan: #cdf7f6ff;
+
 header {
     min-height:6vh;
-    background-color: #f5f5f5;
+    background-color: grey;
     position: sticky;
     top:0px;
+    color:pink;
 }
 #ex {
     padding: 10px;
@@ -22,7 +27,7 @@ header {
 #nav-links {
     a {
         display: none;
-        color:black;
+        color:pink;
     }
 }
 #mobile-menu {
@@ -50,13 +55,13 @@ header {
     align-items: center;
 }
 #nav-links-2-open > a {
-color:black
+color:pink;
 }
 #nav-links-2-closed > a {
-color:black
+color:pink;
 }
 #nav-links > a:hover {
-    color:white
+    color:black;
 }
 @media only screen and (min-width: 600px) {
     header {

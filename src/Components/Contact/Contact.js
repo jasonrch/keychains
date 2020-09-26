@@ -22,13 +22,13 @@ class Contact extends Component {
                         <input type="text" id="email" name="email" placeholder="E-Mail.." />
                     </div>
                     <div className='input3'>
-                        <input type="text" id="phone" name="phone" placeholder="phone" />
+                        <input type="text" id="phone" name="phone" placeholder="Phone" />
                     </div>
                     <div style={{"width":"100%"}}>
                         <textarea id="subject" name="subject" placeholder="Write something.." style={{"height":"200px"}}></textarea>
                     </div>
                     {/* <Button variant="contained" color="primary" href="#contained-buttons">Submit</Button> */}
-                    <Button variant="contained" color="primary" endIcon={<SendIcon></SendIcon>}>Send</Button>
+                    <Button style={{"color":"pink", "backgroundColor":"Black"}} variant="contained" endIcon={<SendIcon></SendIcon>}>Send</Button>
                 </div>
             </div>
          );
